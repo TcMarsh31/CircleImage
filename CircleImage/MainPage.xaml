@@ -1,10 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="CircleImage.MainPage">
     <StackLayout VerticalOptions="Center">
-        <Frame x:Name="circleFrame" HasShadow="False" Padding="0" Margin="0"  VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="Gray">
+        <Frame x:Name="circleFrame" HasShadow="False" Padding="0" Margin="0"  VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="Gray" IsClippedToBounds="True">
             <Image x:Name="circleImg" Source="beverages.png" ></Image>
             </Frame>
-
         <Slider Maximum="150"
                 ValueChanged="Slider_ValueChanged" BackgroundColor="Gray" MaximumTrackColor="Red" MinimumTrackColor="White" ThumbColor="Orange"/>
     </StackLayout>
